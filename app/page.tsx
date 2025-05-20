@@ -1,0 +1,181 @@
+'use client'
+import React from 'react';
+import Slidder from "../components/Slidder";
+import Cards from "../components/Cards";
+import { PiHandsPrayingBold } from "react-icons/pi";
+import { FaMicrophone, FaOm, FaHandsHelping, FaHeart } from "react-icons/fa";
+import Newsfeed from '../components/Newsfeed';
+import { motion } from "framer-motion";
+
+
+const Home = () => {
+  return (
+    <div className='bg-white'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <Slidder />
+      </motion.div>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10 mb-16 container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true}}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          <Cards
+            heading="Morning Prayer"
+            svg={PiHandsPrayingBold}
+            data="Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+          />
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <Cards
+            heading="Exhortation"
+            svg={FaMicrophone}
+            data="Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+          />
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <Cards
+            heading="Counseling"
+            svg={FaOm}
+            data="Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+          />
+        </motion.div>
+      </div>
+
+      <motion.div 
+        className='container mx-auto px-4 py-16 relative'
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className='flex flex-col md:flex-row items-center md:items-start text-center md:text-left'>
+
+          <motion.div 
+            className='mb-8 md:mb-0'
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className='circle bg-orange-400 w-48 h-48 sm:w-60 sm:h-60 flex flex-col justify-center items-center text-white font-bold rounded-full transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:rotate-12 hover:shadow-orange-200/50'>
+              <p className='text-4xl sm:text-6xl font-bold'>
+                25<span className='text-lg sm:text-2xl align-top'>+</span>
+              </p>
+              <p className='text-sm sm:text-base'>Join Our temple</p>
+            </div>
+          </motion.div>
+
+          <motion.div 
+            className='md:ml-16'
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <div className='text-orange-400 font-medium mb-2 text-sm sm:text-base'>
+              + WE HAVE 25+ YEARS OF EXPERIENCE
+            </div>
+            <h2 className='text-black text-3xl sm:text-4xl md:text-5xl font-bold leading-tight'>
+              We Are A Temple<br />That Believes In God.
+            </h2>
+            <div className='mt-6 border-l-4 border-orange-400 pl-4 text-gray-600'>
+              <p className='text-sm sm:text-base'>
+                We are a Temple that believes in Krishna and the followers and We are a Temple that believes in Krishna
+              </p>
+            </div>
+
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12'>
+              <motion.div 
+                className='flex items-start text-left'
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true}}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <div className='text-orange-400 mr-4 text-3xl sm:text-4xl'>
+                  <FaHandsHelping />
+                </div>
+                <div>
+                  <h3 className='text-black text-lg sm:text-xl font-bold mb-2'>Helping Hand</h3>
+                  <p className='text-gray-600 text-sm sm:text-base'>
+                    Vestibulum ac diam sit amet quam vehicula elementum sed.
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div 
+                className='flex items-start text-left'
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <div className='text-amber-500 mr-4 text-3xl sm:text-4xl'>
+                  <FaHeart />
+                </div>
+                <div>
+                  <h3 className='text-gray-800 text-lg sm:text-xl font-bold mb-2'>Open Hearts</h3>
+                  <p className='text-gray-600 text-sm sm:text-base'>
+                    Vestibulum ac diam sit amet quam vehicula elementum sed.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+        
+        <motion.div 
+          className='bg-white text-black widht-full py-12 px-4 flex justify-center'
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className='text-5xl font-extrabold text-black mt-8'>News Feed</h1>
+        </motion.div>
+        
+        <div className="text-black flex flex-wrap gap-6 justify-center mx-1.">
+          {[1, 2, 3, 4, 5].map((index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <Newsfeed 
+                location="Temple Hall" 
+                date="10 May 2025" 
+                topic="Community Gathering" 
+                data="Join us for a special event to celebrate our community and faith." 
+                image="/images/news1.jpg" 
+              />
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
+export default Home;
