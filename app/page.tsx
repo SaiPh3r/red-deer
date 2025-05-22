@@ -153,7 +153,7 @@ const Home = () => {
           <h1 className='text-5xl font-extrabold mt-8 text-orange-400'>Past Events</h1>
         </motion.div>
         
-        <div className="text-black flex justify-center mx-1">
+        <div className="text-black flex justify-center  mx-1">
           <motion.div className='flex gap-6'
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
