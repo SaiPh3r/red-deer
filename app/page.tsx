@@ -7,10 +7,9 @@ import { FaMicrophone, FaOm, FaHandsHelping, FaHeart } from "react-icons/fa";
 import Newsfeed from '../components/Newsfeed';
 import { motion } from "framer-motion";
 
-
 const Home = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white '>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -151,27 +150,52 @@ const Home = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className='text-5xl font-extrabold text-black mt-8'>News Feed</h1>
+          <h1 className='text-5xl font-extrabold mt-8 text-orange-400'>Past Events</h1>
         </motion.div>
         
-        <div className="text-black flex flex-wrap gap-6 justify-center mx-1.">
-          {[1, 2, 3, 4, 5].map((index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Newsfeed 
-                location="Temple Hall" 
-                date="10 May 2025" 
-                topic="Community Gathering" 
-                data="Join us for a special event to celebrate our community and faith." 
-                image="/images/news1.jpg" 
-              />
-            </motion.div>
-          ))}
+        <div className="text-black flex justify-center mx-1">
+          <motion.div className='flex gap-6'
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Newsfeed 
+              location="Temple Hall" 
+              date="11 May 2025" 
+              topic="Narasimha Jayanti" 
+              data="" 
+              image="/images/NarasimhaJayanti.jpg" 
+            />
+
+            <Newsfeed 
+              location="Temple Hall" 
+              date="6 April  2025" 
+              topic="Ram Navami" 
+              data="" 
+              image="/images/RamNavami.jpeg" 
+            />
+
+            <Newsfeed 
+              location="Temple Hall" 
+              date="9 February  2025" 
+              topic="NITYANANDA TRAYODASI" 
+              data="" 
+              image="/images/event3.jpeg" 
+            />
+
+            <Newsfeed 
+              location="Temple Hall" 
+              date="4 August  2025" 
+              topic="Rath Yatra" 
+              data="" 
+              image="/images/events4.jpg" 
+            />
+
+            
+
+
+          </motion.div>
         </div>
       </motion.div>
     </div>
