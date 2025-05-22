@@ -18,7 +18,7 @@ const Home = () => {
       >
         <Slidder />
       </motion.div>
-      
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10 mb-16 container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
@@ -27,12 +27,12 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <Cards
-            heading="Morning Prayer"
+            heading="Our Origin"
             svg={PiHandsPrayingBold}
-            data="Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+            data="On July 28, 2022, H.H. Bhaktimarga Swami Maharaj visited Red Deer, inspiring the birth of ISKCON Red Deer. A house program followed, marking the foundation of a new spiritual center."
           />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -40,12 +40,12 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Cards
-            heading="Exhortation"
+            heading="Our Mission"
             svg={FaMicrophone}
-            data="Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+            data="To spread Krishna Consciousness between Edmonton and Calgary by following Srila Prabhupada’s mission, guided by H.H. Bhaktimarga Swami Maharaj."
           />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -53,9 +53,9 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <Cards
-            heading="Counseling"
+            heading="Our Spirit"
             svg={FaOm}
-            data="Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+            data="With no official temple yet, our strong devotee family hosts festivals and programs with unwavering devotion to Krishna and our community."
           />
         </motion.div>
       </div>
@@ -78,9 +78,9 @@ const Home = () => {
           >
             <div className='circle bg-orange-400 w-48 h-48 sm:w-60 sm:h-60 flex flex-col justify-center items-center text-white font-bold rounded-full transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:rotate-12 hover:shadow-orange-200/50'>
               <p className='text-4xl sm:text-6xl font-bold'>
-                25<span className='text-lg sm:text-2xl align-top'>+</span>
+                3<span className='text-lg sm:text-2xl align-top'>+</span>
               </p>
-              <p className='text-sm sm:text-base'>Join Our temple</p>
+              <p className='text-sm sm:text-base'>Years of Devotion</p>
             </div>
           </motion.div>
 
@@ -92,14 +92,14 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className='text-orange-400 font-medium mb-2 text-sm sm:text-base'>
-              + WE HAVE 25+ YEARS OF EXPERIENCE
+              + CARRYING THE LEGACY OF DEVOTION
             </div>
             <h2 className='text-black text-3xl sm:text-4xl md:text-5xl font-bold leading-tight'>
-              We Are A Temple<br />That Believes In God.
+              ISKCON Red Deer<br />Spreading Krishna Consciousness
             </h2>
             <div className='mt-6 border-l-4 border-orange-400 pl-4 text-gray-600'>
               <p className='text-sm sm:text-base'>
-                We are a Temple that believes in Krishna and the followers and We are a Temple that believes in Krishna
+                Since 2022, we have grown through grace and service, holding major festivals, kirtans, and programs. Our dream is to build an official ISKCON temple in Red Deer.
               </p>
             </div>
 
@@ -115,9 +115,9 @@ const Home = () => {
                   <FaHandsHelping />
                 </div>
                 <div>
-                  <h3 className='text-black text-lg sm:text-xl font-bold mb-2'>Helping Hand</h3>
+                  <h3 className='text-black text-lg sm:text-xl font-bold mb-2'>Serving Community</h3>
                   <p className='text-gray-600 text-sm sm:text-base'>
-                    Vestibulum ac diam sit amet quam vehicula elementum sed.
+                    Devotees regularly host programs, distribute prasadam, and support spiritual education across Red Deer.
                   </p>
                 </div>
               </motion.div>
@@ -133,16 +133,16 @@ const Home = () => {
                   <FaHeart />
                 </div>
                 <div>
-                  <h3 className='text-gray-800 text-lg sm:text-xl font-bold mb-2'>Open Hearts</h3>
+                  <h3 className='text-gray-800 text-lg sm:text-xl font-bold mb-2'>Heartfelt Devotion</h3>
                   <p className='text-gray-600 text-sm sm:text-base'>
-                    Vestibulum ac diam sit amet quam vehicula elementum sed.
+                    Despite limited resources, our hearts are full of love and devotion to Krishna and our community.
                   </p>
                 </div>
               </motion.div>
             </div>
           </motion.div>
         </div>
-        
+
         <motion.div 
           className='bg-white text-black widht-full py-12 px-4 flex justify-center'
           initial={{ opacity: 0, y: 30 }}
@@ -152,7 +152,7 @@ const Home = () => {
         >
           <h1 className='text-5xl font-extrabold mt-8 text-orange-400'>Past Events</h1>
         </motion.div>
-        
+
         <div className="text-black flex justify-center  mx-1">
           <motion.div className='flex gap-6'
             initial={{ opacity: 0, y: 30 }}
@@ -191,9 +191,6 @@ const Home = () => {
               data="" 
               image="/images/events4.jpg" 
             />
-
-            
-
 
           </motion.div>
         </div>

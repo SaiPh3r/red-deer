@@ -45,7 +45,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="hidden md:flex">
-            <ul className="flex items-center">
+            <ul className="flex items-center mr-60">
               <li className="px-4 font-semibold">
                 <Link href="/" className="text-gray-600 hover:text-orange-400">HOME</Link>
               </li>
@@ -59,13 +59,7 @@ const Navbar = () => {
                 <Link href="/donation" className="text-gray-600 hover:text-orange-400">DONATION</Link>
               </li>
               <li className="px-4 font-semibold">
-                <Link href="/product" className="text-gray-600 hover:text-orange-400">PRODUCT</Link>
-              </li>
-              <li className="px-4 font-semibold">
                 <Link href="/gallery" className="text-gray-600 hover:text-orange-400">GALLERY</Link>
-              </li>
-              <li className="px-4 font-semibold">
-                <Link href="/pages" className="text-gray-600 hover:text-orange-400">PAGES</Link>
               </li>
               <li className="px-4 font-semibold">
                 <Link href="/contact-us" className="text-gray-600 hover:text-orange-400">CONTACT US</Link>
@@ -73,11 +67,11 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
+          {/* <div className="hidden md:flex items-center space-x-4">
             <FaSearch className='text-black' />
             <FaHeart className='text-black' />
             <FaShoppingCart className='text-black' />
-          </div>
+          </div> */}
         </div>
 
         {menuOpen && (

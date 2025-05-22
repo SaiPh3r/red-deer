@@ -24,13 +24,13 @@ const Footer = () => {
               We are a temple dedicated to spiritual growth, community service, and spreading the divine teachings of Krishna.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="#" className="bg-orange-400 hover:bg-orange-500 p-2 rounded-full transition-all duration-300">
+              <a href="https://www.facebook.com/iskcon.red.deer.2025" className="bg-orange-400 hover:bg-orange-500 p-2 rounded-full transition-all duration-300">
                 <FaFacebookF />
               </a>
               <a href="#" className="bg-orange-400 hover:bg-orange-500 p-2 rounded-full transition-all duration-300">
                 <FaTwitter />
               </a>
-              <a href="https://www.instagram.com/sai.jsx/" className="bg-orange-400 hover:bg-orange-500 p-2 rounded-full transition-all duration-300">
+              <a href="#" className="bg-orange-400 hover:bg-orange-500 p-2 rounded-full transition-all duration-300">
                 <FaInstagram />
               </a>
               <a href="#" className="bg-orange-400 hover:bg-orange-500 p-2 rounded-full transition-all duration-300">
