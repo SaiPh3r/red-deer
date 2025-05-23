@@ -27,10 +27,10 @@ export default function EmblaCarousel() {
         <div className="embla__slide">
           <div className="relative w-full h-full transition-transform duration-300">
             <Image 
-              src="/images/temple.jpg" 
+              src="/images/iskon.jpg" 
               alt="Slide 1"
               fill
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              style={{  objectPosition: 'center' }}
               priority
             />
           </div>
@@ -38,7 +38,7 @@ export default function EmblaCarousel() {
         <div className="embla__slide">
           <div className="relative w-full h-full transition-transform duration-300">
             <Image 
-              src="/images/slider2.jpg" 
+              src="/images/swami.png" 
               alt="Slide 2"
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}

@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white w-full shadow-md">
       {/* Top bar */}
-      <div className="bg-gray-900 text-white text-sm py-2 px-4 hidden md:block">
+      {/* <div className="bg-gray-900 text-white text-sm py-2 px-4 hidden md:block">
         <div className="container mx-auto flex justify-between">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
@@ -26,7 +26,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="container mx-auto py-4 px-4">
         <div className="flex justify-between items-center">
