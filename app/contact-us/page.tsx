@@ -5,12 +5,12 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-screen max-h-[600px]">
-        <Image 
-          src="/images/temple.jpg" 
-          alt="Temple Banner" 
-          width={1920} 
-          height={1080} 
-          priority 
+        <Image
+          src="/images/temple.jpg"
+          alt="Temple Banner"
+          width={1920}
+          height={1080}
+          priority
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40">
@@ -21,7 +21,7 @@ const ContactPage = () => {
               </h1>
               <div className="text-base sm:text-lg md:text-xl opacity-90">
                 <p className="mb-4">
-                  We are a Temple that believes in God and the followers 
+                  We are a Temple that believes in God and the followers
                   and We are a Temple that believes in Krishna
                 </p>
               </div>
@@ -38,35 +38,26 @@ const ContactPage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="card bg-white p-6 rounded-lg shadow-lg border-l-4 border-amber-500 hover:shadow-xl transition-shadow duration-300">
             <div className="mb-4">
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Main Temple Address</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
             <p className="text-gray-700">
-              Semper Agency Network<br />
-              30 Westbourne Nulla<br />
-              West Bengal Z3 9MH
+              <a href="mailto:iskconreddeer@gmail.com" className="text-amber-600 hover:text-amber-700 transition-colors">
+                iskconreddeer@gmail.com
+              </a>
             </p>
           </div>
+
           <div className="card bg-white p-6 rounded-lg shadow-lg border-l-4 border-amber-500 hover:shadow-xl transition-shadow duration-300">
             <div className="mb-4">
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
             <p className="text-gray-700">
-              Main Office: +91 7827994182<br />
-              Prayer Services: +91 098 765 4321<br />
-              Emergency: +91 555 123 4567
-            </p>
-          </div>
-          <div className="card bg-white p-6 rounded-lg shadow-lg border-l-4 border-amber-500 hover:shadow-xl transition-shadow duration-300">
-            <div className="mb-4">
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Temple Hours</h3>
-            <p className="text-gray-700">
-              Monday - Friday: 6:00 AM - 9:00 PM<br />
-              Saturday: 5:00 AM - 10:00 PM<br />
-              Sunday: 5:00 AM - 11:00 PM
+              <a href="tel:+14038770716" className="text-amber-600 hover:text-amber-700 transition-colors">
+                (403) 877-0716
+              </a>
             </p>
           </div>
         </div>

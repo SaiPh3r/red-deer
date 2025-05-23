@@ -9,7 +9,6 @@ const Footer = () => {
     <footer className="bg-blue-900 text-white text-sm sm:text-base">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-          
           <div>
             <div className="flex items-center mb-4 sm:mb-6">
               <span className="text-orange-500 text-3xl mr-2">
@@ -78,23 +77,24 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
           <div>
             <h3 className="text-lg font-bold mb-4 sm:mb-6 relative">
               Contact Us
               <span className="absolute bottom-0 left-0 w-12 h-1 bg-orange-400 -mb-2"></span>
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-start">
-                <MdLocationOn className="text-orange-400 text-xl mr-3 mt-1" />
-                <span>123 Temple Street, Spiritual Gardens, Krishna Nagar, 560001</span>
-              </li>
               <li className="flex items-center">
                 <MdPhone className="text-orange-400 text-xl mr-3" />
-                <span>+91 7827994182</span>
+                <a href="tel:+14038770716" className="hover:text-orange-400 transition-colors duration-300">
+                  (403) 877-0716
+                </a>
               </li>
               <li className="flex items-center">
                 <MdEmail className="text-orange-400 text-xl mr-3" />
-                <span>saipher@gmail.com</span>
+                <a href="mailto:iskconreddeer@gmail.com" className="hover:text-orange-400 transition-colors duration-300">
+                  iskconreddeer@gmail.com
+                </a>
               </li>
             </ul>
             <div className="mt-6">
@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-gray-600">
+      {/* <div className="border-t border-gray-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
           <p className="text-gray-300 text-center sm:text-left">© 2025 Krishna Mega Temple. All Rights Reserved.</p>
           <ul className="flex flex-wrap justify-center sm:justify-end gap-4">
@@ -114,7 +114,7 @@ const Footer = () => {
             <li><a href="#" className="text-gray-300 hover:text-orange-400 transition-colors duration-300">Terms of Service</a></li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };
