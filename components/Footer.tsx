@@ -15,8 +15,8 @@ const Footer = () => {
                 <FaOm className="text-4xl transition-transform duration-500 hover:rotate-6" />
               </span>
               <h3 className="text-xl font-bold leading-tight">
-                KRISHNA<br />
-                <span className="text-sm font-normal">MEGA TEMPLE</span>
+                ISKCON<br />
+                <span className="text-sm font-normal">RED-DEER</span>
               </h3>
             </div>
             <p className="text-gray-300 mb-4 sm:mb-6">

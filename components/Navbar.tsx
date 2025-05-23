@@ -5,6 +5,7 @@ import { IoIosCall } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
 import { FaSearch, FaHeart, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import { GiByzantinTemple } from "react-icons/gi";
+import Image from 'next/image';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,11 +32,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <div className="text-orange-400 mr-2 text-3xl">
-              <GiByzantinTemple />
+              <Image src="/images/logo.jpg" alt="Logo" width={50} height={50} priority></Image>
             </div>
             <div>
-              <h1 className="font-bold text-xl text-orange-400">KRISHNA</h1>
-              <p className="text-xs text-gray-600">MEGA TEMPLE</p>
+              <h1 className="font-bold text-xl text-orange-400">ISKCON</h1>
+              <p className="text-xs text-gray-600">RED-DEER</p>
             </div>
           </div>
 
