@@ -27,7 +27,7 @@ const About = () => {
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="container mx-auto px-4 sm:px-6 lg:px-16">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center mb-10 sm:mb-16">
             <span className="inline-block bg-orange-50 text-orange-400 px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-semibold tracking-wide mb-2 sm:mb-3">ESTABLISHED 2022</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">THE BEGINNING OF ISKCON RED DEER</h2>
+            <h2 className="heading-lg gradient-text">THE BEGINNING OF ISKCON RED DEER</h2>
           </motion.div>
           
           <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 items-center">
@@ -55,7 +55,7 @@ const About = () => {
             </motion.div>
             
             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="w-full lg:w-7/12 mt-10 lg:mt-0">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+              <h2 className="heading-lg gradient-text mb-4 sm:mb-6">
                 The Birth of<br className="hidden sm:block" />
                 ISKCON Red Deer
               </h2>

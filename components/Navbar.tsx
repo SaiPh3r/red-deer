@@ -36,7 +36,7 @@ const Navbar = () => {
               <Image src="/images/logo.jpg" alt="Logo" width={50} height={50} priority></Image>
             </div>
             <div>
-              <h1 className="font-bold text-xl text-orange-400">ISKCON</h1>
+              <h1 className="font-bold text-xl gradient-text">ISKCON</h1>
               <p className="text-xs text-gray-600">RED-DEER</p>
             </div>
           </div>

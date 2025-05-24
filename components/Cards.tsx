@@ -14,7 +14,7 @@ const Cards: React.FC<CardsProps> = ({ heading, svg: Svg, data }) => {
         <Svg className="text-4xl sm:text-5xl md:text-6xl text-orange-400" />
       </div>
       <div className="p-4 sm:p-6">
-        <h3 className="text-lg sm:text-xl font-bold text-gray-700 mb-2">{heading}</h3>
+        <h3 className="heading-md gradient-text mb-2">{heading}</h3>
         <p className="text-sm sm:text-base text-gray-600">{data}</p>
         <div className="mt-4 pt-4 border-t border-gray-100">
         </div>

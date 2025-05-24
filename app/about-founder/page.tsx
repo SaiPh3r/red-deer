@@ -27,7 +27,7 @@ const page = () => {
               <FaOm className="mx-4 text-orange-400 text-2xl" />
               <div className="w-20 h-px bg-orange-300"></div>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">FOUNDER-ACARYA</h2>
+            <h2 className="heading-xl gradient-text mb-4">FOUNDER-ACARYA</h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto">His Divine Grace A.C. Bhaktivedanta Swami Srila Prabhupada</p>
           </motion.div>
 

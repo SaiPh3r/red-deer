@@ -14,7 +14,7 @@ const Donation_cards: React.FC<CardsProps> = ({ heading, image, data }) => {
         <Image src={image} alt={heading} width={500} height={300} className="object-cover w-full h-full" />
       </div>
       <div className="p-4 sm:p-6 flex-grow">
-        <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">{heading}</h3>
+        <h3 className="heading-md gradient-text mb-2">{heading}</h3>
         <p className="text-sm sm:text-base text-gray-600">{data}</p>
         <div className="mt-4 pt-4 border-t border-gray-100">
         </div>
