@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Lora, Source_Sans_3 } from "next/font/google";
+import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const lora = Lora({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-lora",
+  variable: "--font-playfair",
   display: "swap",
   weight: ["400", "500", "600", "700"],
 });
 
-const sourceSans = Source_Sans_3({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-source",
+  variable: "--font-poppins",
   display: "swap",
-  weight: ["400", "600"],
+  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lora.variable} ${sourceSans.variable} antialiased`}
+        className={`${playfair.variable} ${poppins.variable} antialiased`}
       >
         <Navbar/>
         {children}

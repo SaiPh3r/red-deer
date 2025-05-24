@@ -9,6 +9,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
 
   return (
     <nav className="bg-white w-full shadow-md">
@@ -50,8 +51,24 @@ const Navbar = () => {
               <li className="px-4 font-semibold">
                 <Link href="/" className="text-gray-600 hover:text-orange-400">HOME</Link>
               </li>
-              <li className="px-4 font-semibold">
-                <Link href="/about" className="text-gray-600 hover:text-orange-400">ABOUT</Link>
+              <li className="px-4 font-semibold relative">
+                <div
+                  className="text-gray-600 hover:text-orange-400 cursor-pointer"
+                  onMouseEnter={() => setAboutDropdownOpen(true)}
+                  onMouseLeave={() => setAboutDropdownOpen(false)}
+                >
+                  ABOUT
+                  {aboutDropdownOpen && (
+                    <div className="absolute top-full left-0 bg-white shadow-md rounded-md py-2 w-48 z-50">
+                      <Link href="/about" className="block px-4 py-2 text-gray-600 hover:text-orange-400 hover:bg-gray-50">
+                        About Red-Deer
+                      </Link>
+                      <Link href="/about-founder" className="block px-4 py-2 text-gray-600 hover:text-orange-400 hover:bg-gray-50">
+                        About Founder
+                      </Link>
+                    </div>
+                  )}
+                </div>
               </li>
               <li className="px-4 font-semibold">
                 <Link href="/events" className="text-gray-600 hover:text-orange-400">EVENTS</Link>
@@ -82,7 +99,12 @@ const Navbar = () => {
                 <Link href="/" className="block text-gray-600 hover:text-orange-400">HOME</Link>
               </li>
               <li>
-                <Link href="/about" className="block text-gray-600 hover:text-orange-400">ABOUT</Link>
+                <div className="block text-gray-600">
+                  <div className="flex flex-col">
+                    <Link href="/about" className="block py-2 text-gray-600 hover:text-orange-400 pl-4">About Red-Deer</Link>
+                    <Link href="/about-founder" className="block py-2 text-gray-600 hover:text-orange-400 pl-4">About Founder</Link>
+                  </div>
+                </div>
               </li>
               <li>
                 <Link href="/events" className="block text-gray-600 hover:text-orange-400">EVENTS</Link>
