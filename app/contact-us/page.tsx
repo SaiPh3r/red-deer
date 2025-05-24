@@ -6,7 +6,7 @@ const ContactPage = () => {
     <div className="min-h-screen bg-gray-50">
       <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-screen max-h-[600px]">
         <Image
-          src="/images/temple.jpg"
+          src="/images/swami.png"
           alt="Temple Banner"
           width={1920}
           height={1080}
