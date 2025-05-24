@@ -42,7 +42,7 @@ const Home = () => {
           <Cards
             heading="Our Mission"
             svg={FaMicrophone}
-            data="To spread Krishna Consciousness between Edmonton and Calgary by following Srila Prabhupada’s mission, guided by H.H. Bhaktimarga Swami Maharaj."
+            data="To spread Krishna Consciousness between Edmonton and Calgary by following Srila Prabhupada's mission, guided by H.H. Bhaktimarga Swami Maharaj."
           />
         </motion.div>
 
@@ -143,6 +143,7 @@ const Home = () => {
           </motion.div>
         </div>
 
+        {/* Past Events Section - Commented Out
         <motion.div 
           className='bg-white text-black widht-full py-12 px-4 flex justify-center'
           initial={{ opacity: 0, y: 30 }}
@@ -194,6 +195,7 @@ const Home = () => {
 
           </motion.div>
         </div>
+        */}
       </motion.div>
     </div>
   );
