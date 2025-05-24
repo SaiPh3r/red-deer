@@ -2,7 +2,8 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import {  FaPrayingHands , FaOm } from 'react-icons/fa'
+import {  FaPrayingHands } from 'react-icons/fa'
+import { GiFleurDeLys } from "react-icons/gi";
 
 const page = () => {
   return (
@@ -24,10 +25,10 @@ const page = () => {
           >
             <div className="flex justify-center mb-6">
               <div className="w-20 h-px bg-orange-300"></div>
-              <FaOm className="mx-4 text-orange-400 text-2xl" />
+              <GiFleurDeLys className="mx-4 text-orange-400 text-2xl" />
               <div className="w-20 h-px bg-orange-300"></div>
             </div>
-            <h2 className="heading-xl gradient-text mb-4">FOUNDER-ACARYA</h2>
+            <h2 className="heading-xl gradient-text mb-4">FOUNDER-ACHARYA</h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto">His Divine Grace A.C. Bhaktivedanta Swami Srila Prabhupada</p>
           </motion.div>
 

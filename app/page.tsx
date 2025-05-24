@@ -3,7 +3,8 @@ import React from 'react';
 import Slidder from "../components/Slidder";
 import Cards from "../components/Cards";
 import { PiHandsPrayingBold } from "react-icons/pi";
-import { FaMicrophone, FaOm, FaHandsHelping, FaHeart } from "react-icons/fa";
+import { FaMicrophone, FaHandsHelping, FaHeart } from "react-icons/fa";
+import { GiFleurDeLys } from "react-icons/gi";
 import Newsfeed from '../components/Newsfeed';
 import { motion } from "framer-motion";
 
@@ -54,7 +55,7 @@ const Home = () => {
         >
           <Cards
             heading="Our Spirit"
-            svg={FaOm}
+            svg={GiFleurDeLys}
             data="With no official temple yet, our strong devotee family hosts festivals and programs with unwavering devotion to Krishna and our community."
           />
         </motion.div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { MdLocationOn, MdPhone, MdEmail } from 'react-icons/md';
-import { FaOm } from 'react-icons/fa';
+import { GiFleurDeLys } from "react-icons/gi";
 import Link from 'next/link';
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4 sm:mb-6">
               <span className="text-orange-500 text-3xl mr-2">
-                <FaOm className="text-4xl transition-transform duration-500 hover:rotate-6" />
+                <GiFleurDeLys className="text-4xl transition-transform duration-500 hover:rotate-6" />
               </span>
               <h3 className="text-xl font-bold leading-tight">
                 ISKCON<br />

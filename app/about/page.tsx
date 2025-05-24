@@ -1,8 +1,8 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import { FaLeaf, FaPrayingHands , FaOm } from "react-icons/fa";
-import { GiDreamCatcher } from "react-icons/gi";
+import { FaLeaf, FaPrayingHands } from "react-icons/fa";
+import { GiDreamCatcher, GiFleurDeLys } from "react-icons/gi";
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -69,7 +69,7 @@ const About = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-10">
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="bg-white p-4 sm:p-6 rounded-lg shadow-md transition-all duration-500 hover:shadow-xl hover:translate-y-[-5px] group">
                   <div className="bg-orange-50 text-orange-400 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-3 sm:mb-4 transition-all duration-500 group-hover:bg-orange-400 group-hover:text-white transform">
-                    <FaOm className="text-xl sm:text-2xl transition-all duration-500 group-hover:scale-110" />
+                    <GiFleurDeLys className="text-xl sm:text-2xl transition-all duration-500 group-hover:scale-110" />
                   </div>
                   <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 transition-all duration-300 group-hover:text-orange-400">The Perfect Day</h3>
                   <p className="text-sm sm:text-base text-gray-700">
@@ -116,7 +116,7 @@ const About = () => {
           <div className="w-full max-w-6xl px-4 sm:px-6 flex items-center">
             <div className="flex-grow h-px bg-orange-100"></div>
             <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, type: "spring" }} className="mx-3 sm:mx-4 flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-orange-300 to-orange-500 text-white shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-12">
-              <FaOm className="text-2xl sm:text-3xl" />
+              <GiFleurDeLys className="text-2xl sm:text-3xl" />
             </motion.div>
             <div className="flex-grow h-px bg-orange-100"></div>
           </div>
@@ -126,7 +126,7 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="h-36 sm:h-48 bg-orange-50 flex items-center justify-center">
-                <FaOm className="text-4xl sm:text-6xl text-orange-400" />
+                <GiFleurDeLys className="text-4xl sm:text-6xl text-orange-400" />
               </div>
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">First Rath Yatra</h3>
