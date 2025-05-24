@@ -27,7 +27,7 @@ export default function EmblaCarousel() {
         <div className="embla__slide">
           <div className="relative w-full h-full transition-transform duration-300">
             <Image 
-              src="/images/iskon.jpg" 
+              src="/images/prabhuSlider2.png" 
               alt="Slide 1"
               fill
               style={{  objectPosition: 'center' }}
