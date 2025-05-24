@@ -7,12 +7,16 @@ import { FaSearch, FaHeart, FaShoppingCart, FaBars, FaTimes } from "react-icons/
 import { GiByzantinTemple } from "react-icons/gi";
 import Image from 'next/image';
 
-const Navbar = () => {
+interface NavbarProps {
+  className?: string;
+}
+
+const Navbar = ({ className }: NavbarProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
 
   return (
-    <nav className="bg-white w-full shadow-md">
+    <nav className={`bg-white w-full shadow-md ${className || ''}`}>
       {/* Top bar */}
       {/* <div className="bg-gray-900 text-white text-sm py-2 px-4 hidden md:block">
         <div className="container mx-auto flex justify-between">
@@ -46,8 +50,8 @@ const Navbar = () => {
               {menuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
             </button>
           </div>
-          <div className="hidden md:flex">
-            <ul className="flex items-center mr-60">
+          <div className="hidden md:flex flex-1 justify-center">
+            <ul className="flex items-center">
               <li className="px-4 font-semibold">
                 <Link href="/" className="text-gray-600 hover:text-orange-400">HOME</Link>
               </li>
@@ -73,9 +77,9 @@ const Navbar = () => {
               <li className="px-4 font-semibold">
                 <Link href="/events" className="text-gray-600 hover:text-orange-400">EVENTS</Link>
               </li>
-              <li className="px-4 font-semibold">
+              {/* <li className="px-4 font-semibold">
                 <Link href="/donation" className="text-gray-600 hover:text-orange-400">DONATION</Link>
-              </li>
+              </li> */}
               {/* <li className="px-4 font-semibold">
                 <Link href="/gallery" className="text-gray-600 hover:text-orange-400">GALLERY</Link>
               </li> */}
